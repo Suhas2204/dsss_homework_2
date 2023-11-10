@@ -62,7 +62,7 @@ def math_quiz():
         try:
             user.answer = int(input("Your answer: "))
         except Valuerror:
-            print ('invalid input,Please put a valid integer)
+            print ('invalid input,Please put a valid integer')
             continue
 
         if user__answer == correct_answer:
