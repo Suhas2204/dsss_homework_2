@@ -3,13 +3,13 @@ import random
 
 def yield_random_integers(min_value, max_value):
     """
-    This function generates a random integer within the specified range.
+    This function will generate the random integer within specified range
     
-    min_value sets the minimum value for the random integer
-    max_value sets the maximum value for the random integer
+    min_value sets the minimimum value for random integer
+    max_value sets the maximum value for random integer
 
     Returns:
-    int: Random integer within the specified range
+    int:Random integer within the specified range
     
     """
     return random.randint(min_value, max_value)
@@ -17,9 +17,10 @@ def yield_random_integers(min_value, max_value):
 
 def yield_random_operators():
     '''
-    This generates the random arithmetic operator ('+', '-', '*')
+    This function generates the random arithmetic operator ('+', '-', '*')
 
-    Which returns: str(string)
+    Returns: 
+    str: Random arithmetic operator
 
 
     '''
@@ -28,9 +29,10 @@ def yield_random_operators():
 
 def perform_operation(num_1, num_2, operator):
     '''
-    This will perform the arithmetic operation between numbers and operators
+    This function performs the arithmetic operation between numbers and operators
 
-    which will return a Tuple containing a arithmetic problem as a string and the correct answer
+    Returns
+    tuple: Arithmetic problem as a string and the correct answer
 
     '''
     problem = f"{num_1} {operator} {num_2}"
@@ -61,7 +63,7 @@ def math_quiz():
         print(f"\nQuestion: {PROBLEM}")
         try:
             user_answer = int(input("Your answer: "))
-        except ValuError:
+        except ValueError:
             print ('invalid input,Please put a valid integer')
             continue
 
