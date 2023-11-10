@@ -3,12 +3,13 @@ import random
 
 def yield_random_integers(min_value, max_value):
     """
-    This will generate the random integer within specified range
+    This function generates a random integer within the specified range.
     
-    min_value sets the minimimum value for random integer
-    max_value sets the maximum value for random integer
+    min_value sets the minimum value for the random integer
+    max_value sets the maximum value for the random integer
 
-    Which returns :int(integer)
+    Returns:
+    int: Random integer within the specified range
     
     """
     return random.randint(min_value, max_value)
