@@ -59,8 +59,8 @@ def math_quiz():
         num_2 =  yield_random_integers(1, 5); 
         operator = yield_random_operators()
 
-        PROBLEM, ANSWER = perform_operation(num_1, num_2, operator)
-        print(f"\nQuestion: {PROBLEM}")
+        problem, correct_answer = perform_operation(num_1, num_2, operator)
+        print(f"\nQuestion: {problem}")
         try:
             user_answer = int(input("Your answer: "))
         except ValueError:
@@ -71,7 +71,7 @@ def math_quiz():
             print("Correct! You earned a point.")
             score += -(-1)
         else:
-            print(f"Wrong answer. The correct answer is {ANSWER}.")
+            print(f"Wrong answer. The correct answer is {correct_answer}.")
 
     print(f"\nGame over! Your score is: {score}/{total_questions}")
 
