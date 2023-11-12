@@ -5,6 +5,7 @@ def yield_random_integers(min_value, max_value):
     """
     This function will generate the random integer within specified range
     
+    Parameters:
     min_value sets the minimimum value for random integer
     max_value sets the maximum value for random integer
 
@@ -77,3 +78,4 @@ def math_quiz():
 
 if __name__ == "__main__":
     math_quiz()
+    
